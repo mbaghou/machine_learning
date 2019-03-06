@@ -1,6 +1,6 @@
 **Context**
 
-Implementation of three example of machine learning Models to predict futur houses price.
+Implementation of three example of three ML Models to predict futur houses price.
 
 - Decision Tree 
 - Random Forest
