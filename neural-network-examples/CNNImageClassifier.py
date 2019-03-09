@@ -41,6 +41,7 @@ class CNNImageClassifier:
         print('Compiling ...')
 
     def preprocess(self,training_path, test_path):
+        print('Start preprocessing ...')
         train_datagen = ImageDataGenerator(rescale=1. / 255,
                                                 shear_range=0.2,
                                                 zoom_range=0.2,
@@ -55,7 +56,7 @@ class CNNImageClassifier:
                                                               batch_size=32,
                                                               class_mode='binary')
         self.classifier.fit_generator(training_set,
-                                      steps_per_epoch=1593,
+                                      steps_per_epoch=1589,
                                       epochs=25,
                                       validation_data=test_set,
                                       validation_steps=2000)

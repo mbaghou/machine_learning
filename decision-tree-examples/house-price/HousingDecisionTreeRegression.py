@@ -4,7 +4,7 @@ from sklearn.metrics import mean_absolute_error as mea
 from sklearn.model_selection import train_test_split as tts
 
 
-class HousingDecisionTree:
+class HousingDecisionTreeRegression:
 
     def __init__(self, file):
         self.file = file
@@ -31,5 +31,5 @@ class HousingDecisionTree:
 
 
 if __name__ == '__main__':
-    my_loader = HousingDecisionTree('../data/Melbourne_housing_FULL.csv')
+    my_loader = HousingDecisionTreeRegression('../../data/Melbourne_housing_FULL.csv')
     my_loader.prediction()
