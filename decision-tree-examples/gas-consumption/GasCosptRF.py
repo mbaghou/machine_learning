@@ -12,10 +12,10 @@ class GasCosptRF:
         self.dataset = pd.read_csv(file)
         self.y = self.dataset.Petrol_Consumption
         self.x = self.dataset.drop(['Petrol_Consumption'], axis=1).select_dtypes(exclude=['object'])
-        self.train_x, self.test_x, self.train_y, self.test_y = train_test_split(self.x, self.y, random_state=0)
+        self.train_x, self.test_x, self.train_y, self.test_y = train_test_split(self.x, self.y,test_size=0.2, random_state=0)
         sc = StandardScaler()
         self.train_x = sc.fit_transform(self.train_x)
-        self.test_x = sc.fit_transform(self.test_x)
+        self.test_x = sc.transform(self.test_x)
 
     def train(self, n_estimators):
 
