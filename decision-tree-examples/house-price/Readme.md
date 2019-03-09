@@ -2,6 +2,7 @@
 
 Implementation of three example of machine learning Models to predict future houses price.
 
+
 - Decision Tree 
 - Random Forest
 - Gradient Boosting  (XGBoost)
@@ -12,7 +13,7 @@ Each implementation show the result of mean absolute error
 
 This is a snapshot of a dataset. (data/Melbourne_housing_FULL.csv)
 
-It was scraped from publicly available results posted every week from Domain.com.au. He cleaned it well, and now it's up to you to make data analysis magic. The dataset includes Address, Type of Real estate, Suburb, Method of Selling, Rooms, Price, Real Estate Agent, Date of Sale and distance from C.B.D.
+It was scraped from publicly available results posted every week from Domain.com.au. The dataset includes Address, Type of Real estate, Suburb, Method of Selling, Rooms, Price, Real Estate Agent, Date of Sale and distance from C.B.D.
 
 **Notes on Specific Variables**
 
